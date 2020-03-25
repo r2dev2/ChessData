@@ -2,3 +2,6 @@ zips/*
 pgns/*
 *.pickle
 *~
+stockfish/
+stockfish.zip
+__MAC*
