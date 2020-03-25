@@ -2,22 +2,26 @@
 This is a dataset which contains millions of positions with a Stockfish evaluation. Please help contribute evaluations of the positions to the repo
 
 ## Prerequisites
-Prerequisites include python3, python-chess, and stockfish
-To install python-chess, use 
+Prerequisites include python3, python-chess, and stockfish.
+To setup:
 
-``pip install python-chess``
+On Windows,
 
-Stockfish and python3 can be downloaded from their websites
+``python setup.py``
+
+On other systems,
+
+``python3 setup.py``
 
 ## Contributing
 To get started, chose a fen database to analyse that isn't currently being analysed.
 Use evalfen.py to analyse the dataset
 
-On Windows, run
+On Windows,
 
 ``python evalfen.py -h``
 
-On other systems run
+On other systems,
 
 ``python3 evalfen.py -h``
 
