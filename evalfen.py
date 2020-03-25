@@ -22,7 +22,7 @@ class threadWriter:
     def readlines(self):
         pass
 
-def evalFENThread(output, i, fen, engine):
+def evalFENThread(output, i, fen, engine, d):
     board = chess.Board(fen)
     info = engine.analyse(board, chess.engine.Limit(depth=d))
     output[i] = str(info["score"].white()) + '\n'
@@ -45,7 +45,11 @@ def main(filein, fileout, d, threads, linetostart, enginepath):
                 try:
                     f = contents.pop(0)
                     fen = f[:-1]
-                    t = Thread(target = evalFENThread, args = (threadcontents, i, fen, engines[i], d))
+                    t = Thread(
+                        target = evalFENThread,
+                        args = (threadcontents, i, fen, engines[i], d),
+                        daemon = True
+                    )
                     ts.append(t)
                 except IndexError:
                     print("Almost done")
@@ -78,5 +82,5 @@ if __name__ == "__main__":
     parser.add_argument("-l", help="Line number to start with", default=0)
     parser.add_argument("-e", help="Path to chess engine", default="stockfish")
     args = parser.parse_args()
-    main(args.s, args.d, 22, args.t, args.l, args.e)
+    main(args.s, args.d, 22, int(args.t), int(args.l), args.e)
 
