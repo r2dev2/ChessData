@@ -36,3 +36,4 @@ Current fen databases being analysed:
 | r2dev2bb8  |  Adams.txt        | generating |
 | r2dev2bb8  |  Anderssen.txt    | generating |
 | oliver-ni  |  Ni.txt           | generating |
+| Craig Liu  |  Unzicker.txt     | generating |
