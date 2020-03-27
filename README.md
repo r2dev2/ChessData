@@ -32,8 +32,9 @@ Current fen databases being analysed:
 
 | User	 |	Fen Database | Status |
 | -------|-------------- | ------ |
-| r2dev2bb8	 |	Bogoljubow.txt	 | finished |
-| r2dev2bb8  |  Adams.txt        | generating |
-| r2dev2bb8  |  Anderssen.txt    | generating |
-| oliver-ni  |  Ni.txt           | generating |
-| Craig Liu  |  Unzicker.txt     | generating |
+| @r2dev2bb8	 |	Bogoljubow.txt	 | finished |
+| @r2dev2bb8  |  Adams.txt        | generating |
+| @r2dev2bb8  |  Anderssen.txt    | generating |
+| @oliver-ni  |  Ni.txt           | generating |
+| @Chubtato  |  Benko.txt     | generating |
+| @r2dev2bb8  | BenkoGambit.txt | generating  |
