@@ -32,10 +32,10 @@ Current fen databases being analysed:
 
 | User	 |	Fen Database | Status |
 | -------|-------------- | ------ |
-| @r2dev2bb8	 |	Bogoljubow.txt	 | finished |
+| @r2dev2bb8	 |	Bogoljubow.txt	 | Finished |
 | @r2dev2bb8  |  Adams.txt        | generating |
-| @r2dev2bb8  |  Anderssen.txt    | generating |
-| @oliver-ni  |  Ni.txt           | finished |
+| @r2dev2bb8  |  Anderssen.txt    | Finished |
+| @oliver-ni  |  Ni.txt           | Finished |
 | @Chubtato  |  Benko.txt     | generating |
 | @r2dev2bb8  | BenkoGambit.txt | generating  |
 | @oliver-ni  |  BenkoGambit2.txt  | generating |
@@ -44,3 +44,4 @@ Current fen databases being analysed:
 | Luke Zhao   |  Albert.txt  | generating |
 | @oliver-ni  |  FourKnights.txt  | generating |
 | @oliver-ni  |  English1g6.txt  | generating |
+| @r2dev2bb8  |  Alekhine4Pawns.txt | generating |

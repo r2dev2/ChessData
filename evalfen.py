@@ -35,7 +35,7 @@ def main(filein, fileout, d, threads, linetostart, enginepath):
     
     contents = contents[linetostart:]
     
-    counter = 0
+    counter = linetostart
     with open(fileout, 'a+') as fout:
         l = len(contents)
         while counter < l:
