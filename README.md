@@ -35,6 +35,12 @@ Current fen databases being analysed:
 | @r2dev2bb8	 |	Bogoljubow.txt	 | finished |
 | @r2dev2bb8  |  Adams.txt        | generating |
 | @r2dev2bb8  |  Anderssen.txt    | generating |
-| @oliver-ni  |  Ni.txt           | generating |
+| @oliver-ni  |  Ni.txt           | finished |
 | @Chubtato  |  Benko.txt     | generating |
 | @r2dev2bb8  | BenkoGambit.txt | generating  |
+| @oliver-ni  |  BenkoGambit2.txt  | generating |
+| @oliver-ni  |  Caro-KannAdv.txt  | generating |
+| @oliver-ni  |  PircOtherBlack3.txt  | generating |
+| @oliver-ni  |  Caro-KannAdv.txt  | generating |
+| @oliver-ni  |  FourKnights.txt  | generating |
+| @oliver-ni  |  English1g6.txt  | generating |
