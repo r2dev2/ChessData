@@ -41,6 +41,6 @@ Current fen databases being analysed:
 | @oliver-ni  |  BenkoGambit2.txt  | generating |
 | @oliver-ni  |  Caro-KannAdv.txt  | generating |
 | @oliver-ni  |  PircOtherBlack3.txt  | generating |
-| @oliver-ni  |  Caro-KannAdv.txt  | generating |
+| Luke Zhao   |  Albert.txt  | generating |
 | @oliver-ni  |  FourKnights.txt  | generating |
 | @oliver-ni  |  English1g6.txt  | generating |
