@@ -36,7 +36,7 @@ Current fen databases being analysed:
 | @r2dev2bb8  |  Adams.txt        | generating |
 | @r2dev2bb8  |  Anderssen.txt    | Finished |
 | @oliver-ni  |  Ni.txt           | Finished |
-| @Chubtato  |  Benko.txt     | generating |
+| @Chubtato  |  Benko.txt     | Finished |
 | @r2dev2bb8  | BenkoGambit.txt | generating  |
 | @oliver-ni  |  BenkoGambit2.txt  | generating |
 | @oliver-ni  |  Caro-KannAdv.txt  | generating |
@@ -47,3 +47,4 @@ Current fen databases being analysed:
 | @r2dev2bb8  |  Alekhine4Pawns.txt | generating |
 | Raymond Shao|  Akopian.txt    | generating |
 | @azhang1001 |  Alekhine.txt   | generating |
+| @Chubtato   |  AlekhineExchange.txt | generating |
