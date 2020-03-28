@@ -45,3 +45,5 @@ Current fen databases being analysed:
 | @oliver-ni  |  FourKnights.txt  | generating |
 | @oliver-ni  |  English1g6.txt  | generating |
 | @r2dev2bb8  |  Alekhine4Pawns.txt | generating |
+| Raymond Shao|  Akopian.txt    | generating |
+| @azhang1001 |  Alekhine.txt   | generating |
