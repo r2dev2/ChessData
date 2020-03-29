@@ -33,11 +33,11 @@ def main(filein, fileout, d, threads, linetostart, enginepath):
     with open(filein, 'r') as fin:
         contents = fin.readlines()
     
+    l = len(contents)
     contents = contents[linetostart:]
     
     counter = linetostart
     with open(fileout, 'a+') as fout:
-        l = len(contents)
         while counter < l:
             ts = []
             threadcontents = [0 for i in range(threads)]
