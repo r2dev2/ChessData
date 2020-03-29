@@ -49,3 +49,4 @@ Current fen databases being analysed:
 | @azhang1001 |  Alekhine.txt   | generating |
 | @Chubtato   |  AlekhineExchange.txt | generating |
 | @r2dev2bb8  |  Alekseev.txt | generating |
+| @Kunal-Shirvastav| Anand.txt| generating |
