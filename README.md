@@ -44,11 +44,11 @@ Current fen databases being analysed:
 | Luke Zhao   |  Albert.txt  | generating |
 | @oliver-ni  |  FourKnights.txt  | generating |
 | @oliver-ni  |  English1g6.txt  | generating |
-| @r2dev2bb8  |  Alekhine4Pawns.txt | generating |
+| @r2dev2bb8  |  Alekhine4Pawns.txt | Finished |
 | Raymond Shao|  Akopian.txt    | generating |
 | @azhang1001 |  Alekhine.txt   | generating |
 | @Chubtato   |  AlekhineExchange.txt | generating |
-| @r2dev2bb8  |  Alekseev.txt | Finished |
+| @r2dev2bb8  |  Alekseev.txt | generating |
 | @Kunal-Shirvastav| Anand.txt| generating |
 | @r2dev2bb8  | Beliavsky.txt | generating |
 | Francis Chua| Bacrot.txt    | generating |
