@@ -52,4 +52,4 @@ Current fen databases being analysed:
 | @Kunal-Shirvastav| Anand.txt| generating |
 | @r2dev2bb8  | Beliavsky.txt | generating |
 | Francis Chua| Bacrot.txt    | generating |
-
+| Aryan Dwivedi| BecerraRivero.txt | generating |
