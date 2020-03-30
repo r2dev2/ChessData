@@ -53,3 +53,6 @@ Current fen databases being analysed:
 | @r2dev2bb8  | Beliavsky.txt | generating |
 | Francis Chua| Bacrot.txt    | generating |
 | Aryan Dwivedi| BecerraRivero.txt | generating |
+| @AarushiM   | Andreiken.txt | generating |
+| Bennie Chang| Benjamin.txt  | generating |
+| Saadhan Pittala | Azmaiparashvilieval.txt | generating |
