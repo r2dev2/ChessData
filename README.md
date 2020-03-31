@@ -57,3 +57,4 @@ Current fen databases being analysed:
 | Bennie Chang| Benjamin.txt  | generating |
 | Saadhan Pittala | Azmaiparashvilieval.txt | generating |
 | @r2dev2bb8  | Bogo4Nbd2.txt | generating |
+| @r2dev2bb8  | Sic2Nc6-4Qc7-4Qb6.txt | generating |
