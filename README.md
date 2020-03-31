@@ -48,7 +48,7 @@ Current fen databases being analysed:
 | Raymond Shao|  Akopian.txt    | generating |
 | @azhang1001 |  Alekhine.txt   | generating |
 | @Chubtato   |  AlekhineExchange.txt | generating |
-| @r2dev2bb8  |  Alekseev.txt | generating |
+| @r2dev2bb8  |  Alekseev.txt | Finished |
 | @Kunal-Shirvastav| Anand.txt| generating |
 | @r2dev2bb8  | Beliavsky.txt | generating |
 | Francis Chua| Bacrot.txt    | generating |
@@ -56,3 +56,4 @@ Current fen databases being analysed:
 | @AarushiM   | Andreiken.txt | generating |
 | Bennie Chang| Benjamin.txt  | generating |
 | Saadhan Pittala | Azmaiparashvilieval.txt | generating |
+| @r2dev2bb8  | Bogo4Nbd2.txt | generating |
