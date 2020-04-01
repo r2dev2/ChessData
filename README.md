@@ -58,3 +58,18 @@ Current fen databases being analysed:
 | Saadhan Pittala | Azmaiparashvilieval.txt | generating |
 | @r2dev2bb8  | Bogo4Nbd2.txt | generating |
 | @r2dev2bb8  | Sic2Nc6-4Qc7-4Qb6.txt | generating |
+| @r2dev2bb8  | SicDragon6Be2-6Bc4.txt| generating |
+| @r2dev2bb8  | Sicilian2Nc3-d6.txt   | generating |
+| @r2dev2bb8  | Sicilian2Nc3-e6.txt   | generating |
+| @r2dev2bb8  | Sicilian2Nc6Other5.txt| generating |
+| @r2dev2bb8  | Sicilian2d6-4Qxd4.txt | generating |
+| @r2dev2bb8  | Sicilian2f4.txt       | generating |
+| @r2dev2bb8  | SicilianAccelDragon.txt| generating|
+| @r2dev2bb8  | SicilianAlapin2Nf6.txt| generating | 
+| @Chubtato   | RuyLopezBreyer.txt | generating|
+| @Chubtato   | RuyLopezChigorin.txt    | generating |
+| @Chubtato   | RuyLopezClassical.txt   | generating |
+| @Chubtato   | RuyLopezExchange.txt    | generating |
+| @Chubtato   | RuyLopezFlohr-Zaitsev.txt| generating |
+| @Chubtato   | RuyLopezModSteinitz.txt | generating |
+

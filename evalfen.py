@@ -66,6 +66,7 @@ def main(filein, fileout, d, threads, linetostart, enginepath):
                         print("Add this:", c)
             counter += threads
             print(counter)
+            del ts, threadcontents
             
     print("Done")
     for engine in engines: engine.quit()
