@@ -50,7 +50,7 @@ Current fen databases being analysed:
 | @Chubtato   |  AlekhineExchange.txt | generating |
 | @r2dev2bb8  |  Alekseev.txt | Finished |
 | @Kunal-Shirvastav| Anand.txt| generating |
-| @r2dev2bb8  | Beliavsky.txt | generating |
+| @r2dev2bb8  | Beliavsky.txt | Finished |
 | Francis Chua| Bacrot.txt    | generating |
 | Aryan Dwivedi| BecerraRivero.txt | generating |
 | @AarushiM   | Andreiken.txt | generating |
