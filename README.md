@@ -32,15 +32,44 @@ Current fen databases being analysed:
 
 | User	 |	Fen Database | Status |
 | -------|-------------- | ------ |
-| @r2dev2bb8	 |	Bogoljubow.txt	 | finished |
-| @r2dev2bb8  |  Adams.txt        | generating |
-| @r2dev2bb8  |  Anderssen.txt    | generating |
-| @oliver-ni  |  Ni.txt           | finished |
-| @Chubtato  |  Benko.txt     | generating |
+| @r2dev2bb8	 |	Boleslavsky.txt	 | Finished |
+| @r2dev2bb8  |  Adams.txt        | Finished |
+| @r2dev2bb8  |  Anderssen.txt    | Finished |
+| @oliver-ni  |  Ni.txt           | Finished |
+| @Chubtato  |  Benko.txt     | Finished |
 | @r2dev2bb8  | BenkoGambit.txt | generating  |
 | @oliver-ni  |  BenkoGambit2.txt  | generating |
 | @oliver-ni  |  Caro-KannAdv.txt  | generating |
 | @oliver-ni  |  PircOtherBlack3.txt  | generating |
-| @oliver-ni  |  Caro-KannAdv.txt  | generating |
+| Luke Zhao   |  Albert.txt  | generating |
 | @oliver-ni  |  FourKnights.txt  | generating |
 | @oliver-ni  |  English1g6.txt  | generating |
+| @r2dev2bb8  |  Alekhine4Pawns.txt | Finished |
+| Raymond Shao|  Akopian.txt    | generating |
+| @azhang1001 |  Alekhine.txt   | generating |
+| @Chubtato   |  AlekhineExchange.txt | generating |
+| @r2dev2bb8  |  Alekseev.txt | Finished |
+| @Kunal-Shirvastav| Anand.txt| generating |
+| @r2dev2bb8  | Beliavsky.txt | generating |
+| Francis Chua| Bacrot.txt    | generating |
+| Aryan Dwivedi| BecerraRivero.txt | generating |
+| @AarushiM   | Andreiken.txt | generating |
+| Bennie Chang| Benjamin.txt  | generating |
+| Saadhan Pittala | Azmaiparashvilieval.txt | generating |
+| @r2dev2bb8  | Bogo4Nbd2.txt | generating |
+| @r2dev2bb8  | Sic2Nc6-4Qc7-4Qb6.txt | generating |
+| @r2dev2bb8  | SicDragon6Be2-6Bc4.txt| generating |
+| @r2dev2bb8  | Sicilian2Nc3-d6.txt   | generating |
+| @r2dev2bb8  | Sicilian2Nc3-e6.txt   | generating |
+| @r2dev2bb8  | Sicilian2Nc6Other5.txt| generating |
+| @r2dev2bb8  | Sicilian2d6-4Qxd4.txt | generating |
+| @r2dev2bb8  | Sicilian2f4.txt       | generating |
+| @r2dev2bb8  | SicilianAccelDragon.txt| generating|
+| @r2dev2bb8  | SicilianAlapin2Nf6.txt| generating | 
+| @Chubtato   | RuyLopezBreyer.txt | generating|
+| @Chubtato   | RuyLopezChigorin.txt    | generating |
+| @Chubtato   | RuyLopezClassical.txt   | generating |
+| @Chubtato   | RuyLopezExchange.txt    | generating |
+| @Chubtato   | RuyLopezFlohr-Zaitsev.txt| generating |
+| @Chubtato   | RuyLopezModSteinitz.txt | generating |
+
