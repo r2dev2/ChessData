@@ -22,6 +22,14 @@ class threadWriter:
     def readlines(self):
         pass
 
+def lineCount(filename):
+    try:
+        with open(filename, 'r') as fin:
+            l = len(fin.readlines())
+    except FileNotFoundError:
+        l = 0
+    return l
+
 def evalFENThread(output, i, fen, engine, d):
     board = chess.Board(fen)
     info = engine.analyse(board, chess.engine.Limit(depth=d))
@@ -80,8 +88,7 @@ if __name__ == "__main__":
     parser.add_argument("-s", help="Source file with fens")
     parser.add_argument("-d", help="Destination evaluation file")
     parser.add_argument("-t", help="Number of threads to use", default=5)
-    parser.add_argument("-l", help="Line number to start with", default=0)
     parser.add_argument("-e", help="Path to chess engine", default="stockfish")
     args = parser.parse_args()
-    main(args.s, args.d, 22, int(args.t), int(args.l), args.e)
+    main(args.s, args.d, 22, int(args.t), lineCount(args.d), args.e)
 
