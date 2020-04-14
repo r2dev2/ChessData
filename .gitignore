@@ -5,3 +5,4 @@ pgns/*
 stockfish/
 stockfish.zip
 __MAC*
+*cpython*

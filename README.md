@@ -41,7 +41,7 @@ Current fen databases being analysed:
 | @oliver-ni  |  BenkoGambit2.txt  | generating |
 | @oliver-ni  |  Caro-KannAdv.txt  | generating |
 | @oliver-ni  |  PircOtherBlack3.txt  | generating |
-| Luke Zhao   |  Albert.txt  | generating |
+| Luke Zhao   |  Alburt.txt  | Finished |
 | @oliver-ni  |  FourKnights.txt  | generating |
 | @oliver-ni  |  English1g6.txt  | generating |
 | @r2dev2bb8  |  Alekhine4Pawns.txt | Finished |
@@ -50,11 +50,11 @@ Current fen databases being analysed:
 | @Chubtato   |  AlekhineExchange.txt | generating |
 | @r2dev2bb8  |  Alekseev.txt | Finished |
 | @Kunal-Shirvastav| Anand.txt| generating |
-| @r2dev2bb8  | Beliavsky.txt | generating |
+| @r2dev2bb8  | Beliavsky.txt | Finished |
 | Francis Chua| Bacrot.txt    | generating |
 | Aryan Dwivedi| BecerraRivero.txt | generating |
 | @AarushiM   | Andreiken.txt | generating |
-| Bennie Chang| Benjamin.txt  | generating |
+| Bennie Chang| Benjamin.txt  | Finished |
 | Saadhan Pittala | Azmaiparashvilieval.txt | generating |
 | @r2dev2bb8  | Bogo4Nbd2.txt | generating |
 | @r2dev2bb8  | Sic2Nc6-4Qc7-4Qb6.txt | generating |
@@ -72,4 +72,6 @@ Current fen databases being analysed:
 | @Chubtato   | RuyLopezExchange.txt    | generating |
 | @Chubtato   | RuyLopezFlohr-Zaitsev.txt| generating |
 | @Chubtato   | RuyLopezModSteinitz.txt | generating |
+| Luke Zhao   | Blackburne.txt | generating |
+| Bennie Chang| Bu.txt | generating |
 
