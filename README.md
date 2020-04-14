@@ -38,7 +38,7 @@ Current fen databases being analysed:
 | @oliver-ni  |  Ni.txt           | Finished |
 | @Chubtato  |  Benko.txt     | Finished |
 | @r2dev2bb8  | BenkoGambit.txt | generating  |
-| @oliver-ni  |  BenkoGambit2.txt  | generating |
+| @oliver-ni  |  BenkoGambit2.txt  | Finished |
 | @oliver-ni  |  Caro-KannAdv.txt  | generating |
 | @oliver-ni  |  PircOtherBlack3.txt  | generating |
 | Luke Zhao   |  Alburt.txt  | Finished |
