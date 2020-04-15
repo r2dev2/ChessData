@@ -1,4 +1,6 @@
 from typing import *
+from pathlib import Path
+import os
 
 import requests
 
@@ -27,10 +29,17 @@ def getAvailableNames() -> Set[str]:
     taken = getTakenNames()
     return {name for name in allnames if name not in taken}
 
+def createDir(name: str) -> None:
+    try:
+        os.mkdir(name)
+    except FileExistsError:
+        pass
+
 def downloadName(name: str) -> None:
+    createDir("data")
     fenurl = "https://raw.githubusercontent.com/r2dev2bb8/ChessData/master/fens/"
     r = requests.get(fenurl + name, HEADERS)
-    with open("../" + name, 'w+') as fout:
+    with open(str(Path(os.getcwd()) /  "data" / name), 'w+') as fout:
         fout.write(r.content.decode())
 
 def main():
