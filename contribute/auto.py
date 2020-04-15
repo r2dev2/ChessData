@@ -1,13 +1,16 @@
 import os
-import sys
+import smtplib
 import stat
+import sys
 import zipfile
+from email.message import EmailMessage
+from multiprocessing import Process
 from pathlib import Path
-from subprocess import call
+from subprocess import call, check_output
 from typing import *
 
 import evalfen
-from getFile import downloadName, getAvailableNames, createDir
+from getFile import createDir, downloadName, getAvailableNames
 from send import sendFile, sendNotification
 
 STOCKFISH_DOWNLOAD = {
@@ -21,8 +24,11 @@ STOCKFISH_LOCATION = {
     "win32": r"stockfish\stockfish-11-win\Windows\stockfish_20011801_x64_bmi2.exe",
     "linux": "stockfish/stockfish-11-linux/Linux/stockfish_20011801_x64_bmi2",
     "linux32": "stockfish/stockfish-11-linux/Linux/stockfish_20011801_x64_bmi2",
-    "darwin": "stockfish/stockfish-11-mac/Mac/stockfish-11-bmi2"
+    "darwin": "stockfish/stockfish-11-mac/Mac/stockfish-11-"
 }
+
+def promptName() -> str:
+    return input("What is your name or github username? ")
 
 
 def unzip(filepath: str, resultpath: str) -> None:
@@ -63,7 +69,11 @@ def promptNameChoice() -> Tuple[str]:
     return str(Path(os.getcwd()) / "data" / uin), uin
 
 def findStockfish() -> Path:
-    return Path(os.getcwd()) / STOCKFISH_LOCATION[sys.platform]
+    toadd = "bmi2"
+    if sys.platform == "darwin" and \
+        '-3' in check_output(["/usr/sbin/sysctl", "-n", "machdep.cpu.brand_string"]).decode():
+        toadd = "modern"
+    return Path(os.getcwd()) / (STOCKFISH_LOCATION[sys.platform] + toadd)
 
 
 def promptStockfish() -> Path:
@@ -77,9 +87,9 @@ def getNumberThreads() -> int:
    return os.cpu_count()
 
 def progressBar(percentage: float) -> str:
-    numpound = round(percentage*78)
-    numdash = 78-numpound
-    return '[' + numpound*'#' + numdash*'-' + ']'
+    numpound = round(percentage*10)
+    numdash = 10-numpound
+    return '[' + numpound*'#' + numdash*'-' + ']\t' + "%.2f" % (percentage*100) + "%"
 
 def countOutput(count: int, length: int) -> None:
     print(progressBar(count/length), end='\r', flush=True)
@@ -103,15 +113,28 @@ def main() -> None:
         names.sort()
         name = promptNames(names)
         downloadName(name)
+        sendNotification(promptName(), name)
     pathToStockfish = str(promptStockfish())
     threads = promptThreads()
     source, name = promptNameChoice()
     dest = str(Path(os.getcwd()) / "dest" / name)
 
     amountlines = evalfen.lineCount(dest)
-    countOut = lambda c: countOutput(c, amountlines)
+    finallines = evalfen.lineCount(source)
+    countOut = lambda c: countOutput(c, finallines)
 
-    evalfen.main(source, dest, 22, threads, amountlines, pathToStockfish, countOut)
+    evalargs = (source, dest, 22, threads, amountlines, pathToStockfish, countOut)
+    evaluate = Process(target=evalfen.main, args=evalargs)
+    evaluate.start()
+
+    print("Control c to quit")
+    try:
+        evaluate.join()
+        print(dest)
+        sendFile(promptName(), dest)
+    except KeyboardInterrupt:
+        evaluate.terminate()
+
     print("Done for now")
 
 

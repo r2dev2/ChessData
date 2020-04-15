@@ -14,6 +14,7 @@ def sendFile(username: str, filename: str) -> None:
 
 def main():
     send("Test mail")
+    # sendFile("r2dev2", "dest/Berliner.txt")
 
 if __name__ == "__main__":
     main()

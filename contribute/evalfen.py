@@ -37,7 +37,6 @@ def evalFENThread(output, i, fen, engine, d):
     output[i] = str(info["score"].white()) + '\n'
 
 def main(filein, fileout, d, threads, linetostart, enginepath, counterOutput = lambda x: print(x, end='\r', flush=True)):
-    print(enginepath)
     engines = [chess.engine.SimpleEngine.popen_uci(enginepath) for i in range(threads)]
 
     with open(filein, 'r') as fin:
@@ -79,7 +78,10 @@ def main(filein, fileout, d, threads, linetostart, enginepath, counterOutput = l
                 counterOutput(counter)
                 del ts, threadcontents
         except KeyboardInterrupt:
-            pass
+            print()
+            print("Caught Signal, beginning quit process")
+            for t in ts:
+                t.join()
             
     print("Done")
     for engine in engines: engine.quit()
