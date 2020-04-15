@@ -1,6 +1,7 @@
 import argparse
 import sys
 from threading import Thread
+import subprocess
 
 import chess
 import chess.engine
@@ -35,7 +36,8 @@ def evalFENThread(output, i, fen, engine, d):
     info = engine.analyse(board, chess.engine.Limit(depth=d))
     output[i] = str(info["score"].white()) + '\n'
 
-def main(filein, fileout, d, threads, linetostart, enginepath):
+def main(filein, fileout, d, threads, linetostart, enginepath, counterOutput = lambda x: print(x, end='\r', flush=True)):
+    print(enginepath)
     engines = [chess.engine.SimpleEngine.popen_uci(enginepath) for i in range(threads)]
 
     with open(filein, 'r') as fin:
@@ -46,35 +48,38 @@ def main(filein, fileout, d, threads, linetostart, enginepath):
     
     counter = linetostart
     with open(fileout, 'a+') as fout:
-        while counter < l:
-            ts = []
-            threadcontents = [0 for i in range(threads)]
-            for i in range(threads):
-                try:
-                    f = contents.pop(0)
-                    fen = f[:-1]
-                    t = Thread(
-                        target = evalFENThread,
-                        args = (threadcontents, i, fen, engines[i], d),
-                        daemon = True
-                    )
-                    ts.append(t)
-                except IndexError:
-                    print("Almost done")
-            for t in ts:
-                t.start()
-            for t in ts:
-                t.join()
-            for c in threadcontents:
-                try:
-                    fout.write(c)
-                    fout.flush()
-                except:
-                    if c != 0:
-                        print("Add this:", c)
-            counter += threads
-            print(counter)
-            del ts, threadcontents
+        try:
+            while counter < l:
+                ts = []
+                threadcontents = [0 for i in range(threads)]
+                for i in range(threads):
+                    try:
+                        f = contents.pop(0)
+                        fen = f[:-1]
+                        t = Thread(
+                            target = evalFENThread,
+                            args = (threadcontents, i, fen, engines[i], d),
+                            daemon = True
+                        )
+                        ts.append(t)
+                    except IndexError:
+                        print("Almost done")
+                for t in ts:
+                    t.start()
+                for t in ts:
+                    t.join()
+                for c in threadcontents:
+                    try:
+                        fout.write(c)
+                        fout.flush()
+                    except:
+                        if c != 0:
+                            print("Add this:", c)
+                counter += threads
+                counterOutput(counter)
+                del ts, threadcontents
+        except KeyboardInterrupt:
+            pass
             
     print("Done")
     for engine in engines: engine.quit()

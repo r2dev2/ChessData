@@ -6,3 +6,5 @@ stockfish/
 stockfish.zip
 __MAC*
 *cpython*
+data/
+dest/
