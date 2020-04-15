@@ -1,32 +1,12 @@
 # ChessData
 This is a dataset which contains millions of positions with a Stockfish evaluation. Please help contribute evaluations of the positions to the repo
 
-## Prerequisites
-Prerequisites include python3, python-chess, and stockfish.
-To setup:
-
-On Windows,
-
-``python setup.py``
-
-On other systems,
-
-``python3 setup.py``
 
 ## Contributing
-To get started, chose a fen database to analyse that isn't currently being analysed.
-Use evalfen.py to analyse the dataset
-
-On Windows,
-
-``python evalfen.py -h``
-
-On other systems,
-
-``python3 evalfen.py -h``
+To get started download a pre-built executable from releases
 
 
-The evaluation should go in fen folder for now
+The evaluation should go in eval folder under same name
 
 Current fen databases being analysed:
 
@@ -53,7 +33,7 @@ Current fen databases being analysed:
 | @r2dev2bb8  | Beliavsky.txt | Finished |
 | Francis Chua| Bacrot.txt    | generating |
 | Aryan Dwivedi| BecerraRivero.txt | generating |
-| @AarushiM   | Andreiken.txt | generating |
+| @AarushiM   | Andreiken.txt | Finished |
 | Bennie Chang| Benjamin.txt  | Finished |
 | Saadhan Pittala | Azmaiparashvilieval.txt | generating |
 | @r2dev2bb8  | Bogo4Nbd2.txt | generating |
@@ -74,4 +54,7 @@ Current fen databases being analysed:
 | @Chubtato   | RuyLopezModSteinitz.txt | generating |
 | Luke Zhao   | Blackburne.txt | generating |
 | Bennie Chang| Bu.txt | generating |
+| @r2dev2bb8  | GiuocoPiano.txt | finished |
+| @r2dev2bb8  | GiuocoPiano2.txt | finished |
+| @r2dev2bb8  | Caro-KannClassic.txt | generating |
 
