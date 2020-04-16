@@ -1,9 +1,9 @@
 # ChessData
-This is a dataset which contains millions of positions with a Stockfish evaluation. Please help contribute evaluations of the positions to the repo
+This is a dataset which contains millions of positions with a Stockfish evaluation. Please help contribute evaluations of the positions to the repo. So far, we have 9103771 evaluations.
 
 
 ## Contributing
-To get started download a pre-built executable from releases
+To get started download a pre-built executable from the releases of [chess contributor](https://github.com/r2dev2bb8/ChessDataContributor/releases) and run it.
 
 
 The evaluation should go in eval folder under same name
@@ -17,7 +17,7 @@ Current fen databases being analysed:
 | @r2dev2bb8  |  Anderssen.txt    | Finished |
 | @oliver-ni  |  Ni.txt           | Finished |
 | @Chubtato  |  Benko.txt     | Finished |
-| @r2dev2bb8  | BenkoGambit.txt | generating  |
+| @r2dev2bb8  | BenkoGambit.txt | Finished  |
 | @oliver-ni  |  BenkoGambit2.txt  | Finished |
 | @oliver-ni  |  Caro-KannAdv.txt  | generating |
 | @oliver-ni  |  PircOtherBlack3.txt  | generating |
@@ -56,5 +56,7 @@ Current fen databases being analysed:
 | Bennie Chang| Bu.txt | generating |
 | @r2dev2bb8  | GiuocoPiano.txt | finished |
 | @r2dev2bb8  | GiuocoPiano2.txt | finished |
-| @r2dev2bb8  | Caro-KannClassic.txt | generating |
+| @r2dev2bb8  | Caro-KannClassic.txt | finished |
+| @r2dev2bb8  | CatalanClosed.txt | generating |
+| @r2dev2bb8  | Caro-KannPanBot.txt | generating |
 
