@@ -1,5 +1,5 @@
 # ChessData
-This is a dataset which contains millions of positions with a Stockfish evaluation. Please help contribute evaluations of the positions to the repo. So far, we have 11241281 evaluations.
+This is a dataset which contains millions of positions with a Stockfish evaluation. Please help contribute evaluations of the positions to the repo. So far, we have 12265509 evaluations.
 
 
 ## Contributing
@@ -61,5 +61,8 @@ Current fen databases being analysed:
 | @r2dev2bb8  | Caro-KannPanBot.txt | finished |
 | @r2dev2bb8  | Catalan3Bb4.txt | finished |
 | @r2dev2bb8  | Colle.txt | generating |
-| @r2dev2bb8  | KIDFianchetto.txt | generating |
+| @r2dev2bb8  | KIDFianchetto.txt | finished   |
+| @r2dev2bb8  | KIDClassical.txt  | generating |
+| @r2dev2bb8  | KIDPetrosian.txt  | generating |
+| @r2dev2bb8  | Zvjaginsev.txt    | generating |
 
