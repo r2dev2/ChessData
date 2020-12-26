@@ -1,5 +1,5 @@
 # ChessData
-This is a dataset which contains millions of positions with a Stockfish evaluation. Please help contribute evaluations of the positions to the repo. So far, we have 12958035 evaluations.
+This is an in progress dataset which contains millions of positions with stockfish evaluations. Please help contribute evaluations of the positions to the repo. So far, we have 12958035 evaluations.
 
 
 ## Contributing
