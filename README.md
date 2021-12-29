@@ -1,5 +1,10 @@
 # ChessData
+
 This is an in progress dataset which contains millions of positions with stockfish evaluations. Please help contribute evaluations of the positions to the repo. So far, we have 12958035 evaluations.
+
+## IMPORTANT !!!
+
+> ❗❗❗  Updates to the dataset will be on the [version hosted on kaggle](https://www.kaggle.com/ronakbadhe/chess-evaluations).
 
 
 ## Contributing
